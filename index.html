@@ -10,25 +10,52 @@
         border:solid ;
         height: 300px;
         overflow: scroll;
+        
       }
-      img{
+      #contenedor2 img{
         position:absolute;
       }
-      #ver{
-        position: absolute;
-        width:50px;
+      
+      #personage{
         border: solid ;
-        height: 300px;
+        width: 20px;
+        height: 30px;
+        position: absolute;
+        background:blue;
+      }
+      
+      #controles button{
+        width:49.3%;
+        display: inline-block;
+      }
+      
+      #controles img{
+        width: 100%;
       }
     </style>
   </head>
-  <body>
+  <body >
     <div id="contenedor">
-      
+      <div id="contenedor2"></div>
     </div>
-    <div id="ver">
+    
+    <div id="controles">
       
+      <button id="atras" onclick="atras()"
+      ontouchstart="corre1()" ontouchend='para1()'>
+        <img src="img/flecha1.png" alt="flecha para retroceder">
+      </button>
+        
+        
+      <button id="avansa" onclick="avansa()"
+      ontouchstart="corre2()" ontouchend='para2()'>
+        <img src="img/flecha2.png" alt="flecha para avansar">
+      </button>
+      
+      <button onclick="saltar()">saltar</button>
     </div>
+    
     <script src="script/index.js"></script>
+    <script src="script/personaje.js"></script>
   </body>
 </html>

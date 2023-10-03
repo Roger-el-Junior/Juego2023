@@ -3,10 +3,14 @@ document.addEventListener('DOMContentLoaded', function() {
   troncosDe1P()
   troncosDe2P()
   arbol()
+  crearPersonaje()
+  stylePer()
+  
+  
 })
 
 function crearObjeto(objeto, t) {
-  let i = document.getElementById("contenedor")
+  let i = document.getElementById("contenedor2")
 
   let img = document.createElement("img")
   img.setAttribute("src", `img/${objeto}.png`)
@@ -17,7 +21,7 @@ function crearObjeto(objeto, t) {
 
 }
 
-let tamañoDeMapa =1200
+let tamañoDeMapa =600
 let pr1 = tamañoDeMapa/600
 let pr2 = tamañoDeMapa/200
 let obj3 = tamañoDeMapa/300
