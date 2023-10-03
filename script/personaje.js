@@ -36,7 +36,7 @@ function limite() {
     console.log(posicionPersonaje)
   }
   if (posicionPersonaje == widthDeMapa) {
-    //posicionPersonaje=280
+    
     console.log(posicionPersonaje)
   }
 }
@@ -45,7 +45,7 @@ function atras() {
 
   posicionPersonaje -= move
   limite()
-  //console.log(posicionPersonaje)
+  
   let p = document.getElementById('personage')
   p.style.left = posicionPersonaje+"px"
 
@@ -60,9 +60,7 @@ function avansa() {
   let p = document.getElementById('personage')
   p.style.left = posicionPersonaje+"px"
 
-  //let box = document.getElementById("contenedor2")
-  //scroll(box)
-
+  
 }
 
 let val1;
@@ -73,7 +71,7 @@ function corre1() {
   function avansa1() {
     posicionPersonaje -= 1
     limite()
-    //console.log(posicionPersonaje)
+    
     let p = document.getElementById('personage')
     p.style.left = posicionPersonaje+"px"
 
